@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <meta charset="utf-8">
+  <title>Google</title>
+  <style>
+    html { background: #fff; margin: 13em; }
+    body { font: .8125em/1.5 arial, sans-serif; text-align: center; }
+    .advanced-setting{
+        width: 65px;
+        display: inline-block;
+        margin-right: 7px;
+    }
+    .bdlayer {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 752px;
+        min-height: 240px;
+        margin-top: -180px;
+        margin-left: -376px;
+        background: #fff;
+        z-index: 1113;
+        box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
+        border-radius: 16px;
+    }
+    ul.breadcrumb {
+      padding: 0px 16px;
+      list-style: none;
+      background-color: #fff;
+      top: 0px;
+      right: 0px;
+      position: absolute;
+    }
+
+    ul.breadcrumb li {display: inline;}
+    ul.breadcrumb li+li:before {
+      padding: 5px;
+      color: black;
+      content: "/\00a0";
+    }
+    ul.breadcrumb li a {color: blue;}
+.textbox{
+  width: 512px;
+  height: 16px;
+  padding: 12px 16px;
+  font-size: 16px;
+  vertical-align: top;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #c4c7ce;
+  background: #fff;
+  color: #222;
+  overflow: hidden;
+  box-sizing: content-box;
+  margin-right: -5px
+}
+.button {
+  cursor: pointer;
+  width: 200px;
+  height: 44px;
+  line-height: 45px;
+  line-height: 44px\9;
+  padding: 0;
+  background: 0 0;
+  background-color: #4e6ef2;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 17px;
+  color: #fff;
+  box-shadow: none;
+  font-weight: 400;
+  border: none;
+  outline: 0;
+
+}
+.div1{
+  left:700px;
+  position:absolute;
+}
+.div2{
+  left:769px;
+  top:240px;
+  position:absolute;
+}
+.div3{
+  left:769px;
+  top:265px;
+  position:absolute;
+}
+.div4{
+  left:770px;
+  top:280px;
+  position:absolute;
+}
+.div5{
+  left:770px;
+  top:350px;
+  position:absolute;
+}
+.div6{
+  left:770px;
+  top:1px;
+  position:absolute;
+}
+  </style>
+  <ul class="breadcrumb">
+  <li><a href="homework1.html">搜索</a></li>
+  <li><a href="baiduPic.html">图片</a></li>
+  <li>高级搜索</li>
+</ul>
+<form action="https://www.baidu.com/s">
+  <div class="div6">
+      <img src="baidu.png" alt="baidu" width="360" height="160" margin=5px >
+  </div>
+<div class="div1">
+    <span >高级搜索：</span>
+    <span >包含全部关键字：</span>
+    <input type="text" name="q1" >
+    <span >包含完整关键字：</span>
+    <input type="text" name="q2" ></div>
+  <div class="div2">
+    <span >包含任意关键字：</span>
+    <input type="text" name="q3" >
+    <span >不包含关键字：</span>
+    <input type="text" name="q4" >
+  </div>
+<!-- <div class="div3">
+    <span >时间：</span>
+<select name="1" >
+    <option value="0">全部时间</option>
+    <option value="1">最近一天</option>
+    <option value="2">最近一周</option>
+    <option value="3">最近一月</option>
+    <option value="4">最近一年</option>
+</select>
+</div> -->
+<div class="div4">
+    <span >搜索格式：</span>
+<select name="ft" >
+    <option value="">所有网页或文件</option>
+    <option value="pdf">PDF</option>
+    <option value="doc">WORD</option>
+    <option value="xls">EXCEL</option>
+    <option value="ppt">PPT</option>
+    <option value="rtf">RTF</option>
+    </select>
+
+</div>
+<div class="div5">
+  <input type="submit" class="button" value="百度一下">
+</div>
+  </form>
